@@ -37,19 +37,34 @@ const recentProjects = [
     status: "review" as const,
     drawings: 8,
     thumbnail: (
-      <svg viewBox="0 0 100 70" fill="none" className="w-full h-full">
-        <rect x="15" y="12" width="70" height="46" stroke="#D4CEC8" strokeWidth="1" rx="1" />
-        <circle cx="50" cy="35" r="15" stroke="#D4CEC8" strokeWidth="1" />
-        <circle cx="50" cy="35" r="6" stroke="#D4CEC8" strokeWidth="0.8" />
-        <line x1="50" y1="4" x2="50" y2="66" stroke="#F47A20" strokeWidth="0.6" strokeDasharray="3,2" opacity="0.45" />
-        <line x1="4" y1="35" x2="96" y2="35" stroke="#F47A20" strokeWidth="0.6" strokeDasharray="3,2" opacity="0.45" />
-        <circle cx="22" cy="20" r="2" stroke="#D4CEC8" strokeWidth="0.8" />
-        <circle cx="78" cy="20" r="2" stroke="#D4CEC8" strokeWidth="0.8" />
-        <circle cx="22" cy="50" r="2" stroke="#D4CEC8" strokeWidth="0.8" />
-        <circle cx="78" cy="50" r="2" stroke="#D4CEC8" strokeWidth="0.8" />
-        <line x1="15" y1="63" x2="85" y2="63" stroke="#D4CEC8" strokeWidth="0.6" />
-        <line x1="15" y1="61" x2="15" y2="65" stroke="#D4CEC8" strokeWidth="0.6" />
-        <line x1="85" y1="61" x2="85" y2="65" stroke="#D4CEC8" strokeWidth="0.6" />
+      <svg viewBox="0 0 260 140" fill="none" className="w-full h-full">
+        {/* Front view */}
+        <rect x="20" y="20" width="100" height="70" stroke="#C8C2BA" strokeWidth="0.9" />
+        <rect x="10" y="88" width="120" height="10" stroke="#C8C2BA" strokeWidth="0.9" />
+        <circle cx="70" cy="55" r="22" stroke="#C8C2BA" strokeWidth="0.9" />
+        <circle cx="70" cy="55" r="8" stroke="#C8C2BA" strokeWidth="0.6" strokeDasharray="3,2" />
+        <circle cx="28" cy="28" r="4" stroke="#C8C2BA" strokeWidth="0.7" />
+        <circle cx="112" cy="28" r="4" stroke="#C8C2BA" strokeWidth="0.7" />
+        <circle cx="28" cy="82" r="4" stroke="#C8C2BA" strokeWidth="0.7" />
+        <circle cx="112" cy="82" r="4" stroke="#C8C2BA" strokeWidth="0.7" />
+        {/* Top view */}
+        <rect x="20" y="4" width="100" height="14" stroke="#C8C2BA" strokeWidth="0.7" />
+        {/* Side view */}
+        <rect x="135" y="20" width="48" height="70" stroke="#C8C2BA" strokeWidth="0.9" />
+        <rect x="128" y="88" width="62" height="10" stroke="#C8C2BA" strokeWidth="0.9" />
+        {/* Dimensions */}
+        <line x1="20" y1="108" x2="120" y2="108" stroke="#F47A20" strokeWidth="0.6" />
+        <text x="70" y="116" textAnchor="middle" fontSize="7" fill="#F47A20">240mm</text>
+        {/* GD&T */}
+        <rect x="47" y="12" width="46" height="6" fill="none" stroke="#F47A20" strokeWidth="0.5" />
+        <text x="70" y="17" textAnchor="middle" fontSize="4.5" fill="#F47A20">⌖ ⌀0.05 A B</text>
+        {/* Center lines */}
+        <line x1="8" y1="55" x2="132" y2="55" stroke="#F47A20" strokeWidth="0.4" strokeDasharray="6,3,2,3" opacity="0.6" />
+        <line x1="70" y1="2" x2="70" y2="122" stroke="#F47A20" strokeWidth="0.4" strokeDasharray="6,3,2,3" opacity="0.6" />
+        {/* Title stub */}
+        <rect x="180" y="110" width="70" height="22" fill="none" stroke="#D4CEC8" strokeWidth="0.5" />
+        <text x="215" y="119" textAnchor="middle" fontSize="5" fill="#78716C">PRJ-904-MH-001</text>
+        <text x="215" y="127" textAnchor="middle" fontSize="5" fill="#F47A20">HANOMI</text>
       </svg>
     ),
   },
@@ -62,17 +77,26 @@ const recentProjects = [
     status: "ready" as const,
     drawings: 12,
     thumbnail: (
-      <svg viewBox="0 0 100 70" fill="none" className="w-full h-full">
-        <rect x="18" y="10" width="64" height="50" stroke="#D4CEC8" strokeWidth="1" rx="1" />
-        <rect x="28" y="20" width="44" height="30" stroke="#D4CEC8" strokeWidth="0.7" strokeDasharray="2,1.5" />
-        <circle cx="50" cy="35" r="9" stroke="#D4CEC8" strokeWidth="0.8" />
-        <line x1="4" y1="35" x2="18" y2="35" stroke="#F47A20" strokeWidth="0.6" strokeDasharray="3,2" opacity="0.5" />
-        <line x1="82" y1="35" x2="96" y2="35" stroke="#F47A20" strokeWidth="0.6" strokeDasharray="3,2" opacity="0.5" />
-        <line x1="28" y1="20" x2="32" y2="25" stroke="#D4CEC8" strokeWidth="0.5" />
-        <line x1="28" y1="26" x2="34" y2="32" stroke="#D4CEC8" strokeWidth="0.5" />
-        <line x1="28" y1="32" x2="32" y2="36" stroke="#D4CEC8" strokeWidth="0.5" />
-        <line x1="66" y1="20" x2="70" y2="24" stroke="#D4CEC8" strokeWidth="0.5" />
-        <line x1="66" y1="26" x2="70" y2="30" stroke="#D4CEC8" strokeWidth="0.5" />
+      <svg viewBox="0 0 260 140" fill="none" className="w-full h-full">
+        {/* Front view */}
+        <circle cx="78" cy="62" r="42" stroke="#C8C2BA" strokeWidth="0.9" />
+        <circle cx="78" cy="62" r="18" stroke="#C8C2BA" strokeWidth="0.9" />
+        <circle cx="78" cy="62" r="6" stroke="#C8C2BA" strokeWidth="0.6" />
+        {/* Ports */}
+        <rect x="72" y="6" width="12" height="16" stroke="#C8C2BA" strokeWidth="0.7" />
+        <rect x="72" y="102" width="12" height="16" stroke="#C8C2BA" strokeWidth="0.7" />
+        <rect x="6" y="56" width="16" height="12" stroke="#C8C2BA" strokeWidth="0.7" />
+        <rect x="134" y="56" width="16" height="12" stroke="#C8C2BA" strokeWidth="0.7" />
+        {/* Side view */}
+        <rect x="170" y="30" width="54" height="64" stroke="#C8C2BA" strokeWidth="0.9" />
+        <circle cx="197" cy="62" r="16" stroke="#C8C2BA" strokeWidth="0.6" strokeDasharray="3,2" />
+        {/* Center lines */}
+        <line x1="4" y1="62" x2="152" y2="62" stroke="#F47A20" strokeWidth="0.4" strokeDasharray="6,3,2,3" opacity="0.6" />
+        <line x1="78" y1="2" x2="78" y2="122" stroke="#F47A20" strokeWidth="0.4" strokeDasharray="6,3,2,3" opacity="0.6" />
+        {/* Ready badge area */}
+        <rect x="168" y="106" width="74" height="26" fill="none" stroke="#C8C2BA" strokeWidth="0.5" />
+        <text x="205" y="116" textAnchor="middle" fontSize="5" fill="#78716C">PRJ-903 · Rev B</text>
+        <text x="205" y="126" textAnchor="middle" fontSize="5.5" fill="#22C55E">✓ Mfg. Ready</text>
       </svg>
     ),
   },
@@ -85,15 +109,30 @@ const recentProjects = [
     status: "processing" as const,
     drawings: 4,
     thumbnail: (
-      <svg viewBox="0 0 100 100" fill="none" className="w-full h-full">
-        <circle cx="50" cy="50" r="36" stroke="#D4CEC8" strokeWidth="1" />
-        <circle cx="50" cy="50" r="9" stroke="#D4CEC8" strokeWidth="1" />
-        <line x1="50" y1="4" x2="50" y2="96" stroke="#F47A20" strokeWidth="0.6" strokeDasharray="3,2" opacity="0.4" />
-        <line x1="4" y1="50" x2="96" y2="50" stroke="#F47A20" strokeWidth="0.6" strokeDasharray="3,2" opacity="0.4" />
-        <path d="M50,14 C47,26 45,36 50,41" stroke="#D4CEC8" strokeWidth="0.9" />
-        <path d="M50,59 C55,64 55,74 50,86" stroke="#D4CEC8" strokeWidth="0.9" />
-        <path d="M14,50 C26,53 36,55 41,50" stroke="#D4CEC8" strokeWidth="0.9" />
-        <path d="M59,50 C64,45 74,43 86,50" stroke="#D4CEC8" strokeWidth="0.9" />
+      <svg viewBox="0 0 260 140" fill="none" className="w-full h-full">
+        {/* Circular front view */}
+        <circle cx="75" cy="68" r="50" stroke="#C8C2BA" strokeWidth="0.9" />
+        <circle cx="75" cy="68" r="12" stroke="#C8C2BA" strokeWidth="0.9" />
+        <circle cx="75" cy="68" r="5" stroke="#C8C2BA" strokeWidth="0.6" />
+        {/* Blade profiles */}
+        <path d="M75,18 C71,32 67,48 75,56" stroke="#C8C2BA" strokeWidth="0.9" fill="none" />
+        <path d="M75,80 C83,88 83,100 75,118" stroke="#C8C2BA" strokeWidth="0.9" fill="none" />
+        <path d="M25,68 C38,72 52,73 60,68" stroke="#C8C2BA" strokeWidth="0.9" fill="none" />
+        <path d="M90,68 C98,62 108,60 125,68" stroke="#C8C2BA" strokeWidth="0.9" fill="none" />
+        <path d="M40,33 C49,42 54,51 52,59" stroke="#C8C2BA" strokeWidth="0.8" fill="none" />
+        <path d="M98,77 C106,85 110,94 109,103" stroke="#C8C2BA" strokeWidth="0.8" fill="none" />
+        {/* Top view inset */}
+        <rect x="155" y="22" width="88" height="30" stroke="#C8C2BA" strokeWidth="0.7" />
+        <ellipse cx="199" cy="37" rx="28" ry="9" stroke="#C8C2BA" strokeWidth="0.6" />
+        {/* Center lines */}
+        <line x1="4" y1="68" x2="130" y2="68" stroke="#F47A20" strokeWidth="0.4" strokeDasharray="6,3,2,3" opacity="0.6" />
+        <line x1="75" y1="4" x2="75" y2="132" stroke="#F47A20" strokeWidth="0.4" strokeDasharray="6,3,2,3" opacity="0.6" />
+        {/* Processing indicator */}
+        <rect x="153" y="70" width="90" height="26" fill="none" stroke="#C8C2BA" strokeWidth="0.5" />
+        <text x="198" y="80" textAnchor="middle" fontSize="5" fill="#78716C">PRJ-901 · In Progress</text>
+        <rect x="157" y="84" width="82" height="4" fill="none" stroke="#C8C2BA" strokeWidth="0.4" />
+        <rect x="157" y="84" width="53" height="4" fill="#F47A20" opacity="0.4" />
+        <text x="198" y="102" textAnchor="middle" fontSize="5" fill="#78716C">DIN 2768 · 65%</text>
       </svg>
     ),
   },
@@ -141,25 +180,32 @@ function StatusBadge({ status }: { status: "ready" | "review" | "processing" | "
 
 function DashboardView({ onNewDrawing }: { onNewDrawing: () => void }) {
   const [copilotInput, setCopilotInput] = useState("")
+  const [hoveredCard, setHoveredCard] = useState<number | null>(null)
 
   const actionCards = [
     {
       icon: FilePen,
       title: "Generate Drawing",
       description: "Convert 3D CAD into manufacturing-ready 2D drawings with GD&T annotations.",
+      meta: "ASME Y14.5 · ISO 1101",
       onClick: onNewDrawing,
+      primary: true,
     },
     {
       icon: Upload,
       title: "Upload Assembly",
       description: "Analyze multi-part assemblies, extract BOM and component relationships.",
+      meta: "STEP · IGES · Parasolid",
       onClick: onNewDrawing,
+      primary: false,
     },
     {
       icon: ClipboardCheck,
       title: "Standards Review",
       description: "Review GD&T callouts, tolerance stacks and compliance with ASME or ISO.",
+      meta: "Automated compliance check",
       onClick: () => {},
+      primary: false,
     },
   ]
 
@@ -179,9 +225,12 @@ function DashboardView({ onNewDrawing }: { onNewDrawing: () => void }) {
           <button
             key={i}
             onClick={card.onClick}
+            onMouseEnter={() => setHoveredCard(i)}
+            onMouseLeave={() => setHoveredCard(null)}
             className="group text-left p-6 bg-card border border-border rounded-xl hover:border-primary/30 hover:shadow-sm transition-all duration-150 flex flex-col gap-5 cad-corners"
+            style={{ transform: hoveredCard === i ? "translateY(-1px)" : "none", transition: "all 0.18s cubic-bezier(0.23,1,0.32,1)" }}
           >
-            <div className="w-10 h-10 rounded-lg border border-primary/20 bg-accent flex items-center justify-center">
+            <div className={`w-10 h-10 rounded-lg border flex items-center justify-center transition-colors ${card.primary ? "border-primary/30 bg-accent" : "border-primary/20 bg-accent"}`}>
               <card.icon className="w-5 h-5 text-primary" strokeWidth={1.5} />
             </div>
             <div className="flex flex-col gap-1.5 flex-1">
@@ -190,9 +239,11 @@ function DashboardView({ onNewDrawing }: { onNewDrawing: () => void }) {
               </h3>
               <p className="text-xs text-muted-foreground leading-relaxed">{card.description}</p>
             </div>
-            <div className="flex items-center gap-1 text-xs text-primary font-medium opacity-0 group-hover:opacity-100 transition-opacity">
-              <span>Get started</span>
-              <ArrowRight className="w-3.5 h-3.5" />
+            <div className="flex items-center justify-between">
+              <span className="text-[10px] font-mono text-muted-foreground/60">{card.meta}</span>
+              <span className="flex items-center gap-1 text-xs text-primary font-medium opacity-0 group-hover:opacity-100 transition-opacity">
+                Start <ArrowRight className="w-3.5 h-3.5" />
+              </span>
             </div>
           </button>
         ))}
@@ -211,48 +262,59 @@ function DashboardView({ onNewDrawing }: { onNewDrawing: () => void }) {
           {recentProjects.map((project) => (
             <div
               key={project.id}
-              className="group bg-card border border-border rounded-xl p-5 hover:border-primary/25 hover:shadow-sm transition-all cursor-pointer flex flex-col gap-4"
+              className="group bg-card border border-border rounded-xl hover:border-primary/25 hover:shadow-sm transition-all cursor-pointer flex flex-col overflow-hidden"
             >
-              {/* Header */}
-              <div className="flex items-start justify-between gap-2">
-                <div className="flex flex-col gap-0.5 min-w-0">
-                  <span className="text-[10px] font-mono text-muted-foreground">
-                    {project.id} · {project.compliance}
+              {/* Drawing preview — large */}
+              <div className="h-[160px] bg-muted/30 border-b border-border flex items-center justify-center relative overflow-hidden">
+                <div className="absolute inset-0 dots-grid opacity-60" />
+                <div className="absolute inset-0 blueprint-grid-fine opacity-20" />
+                <div className="w-full h-full p-4 relative z-10">{project.thumbnail}</div>
+                {/* CAD corners */}
+                <span className="absolute top-2 left-2 text-[9px] font-mono text-muted-foreground/40">TL</span>
+                <span className="absolute top-2 right-2 text-[9px] font-mono text-muted-foreground/40">TR</span>
+                <span className="absolute bottom-2 left-2 text-[9px] font-mono text-primary/30">{project.compliance}</span>
+                <span className="absolute bottom-2 right-2 text-[9px] font-mono text-muted-foreground/40">{project.drawings} sheets</span>
+              </div>
+
+              <div className="p-4 flex flex-col gap-3">
+                {/* Header */}
+                <div className="flex items-start justify-between gap-2">
+                  <div className="flex flex-col gap-0.5 min-w-0">
+                    <span className="text-[10px] font-mono text-muted-foreground">{project.id}</span>
+                    <h3 className="text-sm font-semibold text-foreground truncate">{project.name}</h3>
+                  </div>
+                  <StatusBadge status={project.status} />
+                </div>
+
+                {/* Readiness bar */}
+                <div className="flex flex-col gap-1.5">
+                  <div className="flex items-center justify-between">
+                    <span className="text-[11px] text-muted-foreground">Manufacturing readiness</span>
+                    <span className="text-[11px] font-semibold font-mono" style={{ color: project.progress === 100 ? "rgb(22,163,74)" : project.progress >= 90 ? "var(--primary)" : "rgb(245,158,11)" }}>
+                      {project.progress}%
+                    </span>
+                  </div>
+                  <div className="h-1 bg-muted rounded-full overflow-hidden">
+                    <div
+                      className="h-full rounded-full transition-all"
+                      style={{
+                        width: `${project.progress}%`,
+                        backgroundColor: project.progress === 100 ? "rgb(22,163,74)" : project.progress >= 90 ? "var(--primary)" : "rgb(245,158,11)"
+                      }}
+                    />
+                  </div>
+                </div>
+
+                {/* Footer */}
+                <div className="flex items-center justify-between pt-0.5">
+                  <div className="flex items-center gap-1.5 text-[11px] text-muted-foreground">
+                    <Clock className="w-3 h-3" strokeWidth={1.5} />
+                    <span>{project.modified}</span>
+                  </div>
+                  <span className="text-xs text-primary font-medium flex items-center gap-0.5 opacity-0 group-hover:opacity-100 transition-opacity">
+                    Open <ArrowRight className="w-3 h-3" />
                   </span>
-                  <h3 className="text-sm font-semibold text-foreground truncate">{project.name}</h3>
                 </div>
-                <StatusBadge status={project.status} />
-              </div>
-
-              {/* Drawing thumbnail */}
-              <div className="h-[90px] rounded-lg bg-muted/50 border border-border flex items-center justify-center relative overflow-hidden">
-                <div className="absolute inset-0 dots-grid" />
-                <div className="w-full h-full p-3">{project.thumbnail}</div>
-              </div>
-
-              {/* Progress */}
-              <div className="flex flex-col gap-1.5">
-                <div className="flex items-center justify-between">
-                  <span className="text-[11px] text-muted-foreground">Drawing readiness</span>
-                  <span className="text-[11px] font-semibold text-foreground font-mono">{project.progress}%</span>
-                </div>
-                <div className="h-1 bg-muted rounded-full overflow-hidden">
-                  <div
-                    className="h-full bg-primary rounded-full transition-all"
-                    style={{ width: `${project.progress}%` }}
-                  />
-                </div>
-              </div>
-
-              {/* Footer */}
-              <div className="flex items-center justify-between pt-0.5">
-                <div className="flex items-center gap-1.5 text-[11px] text-muted-foreground">
-                  <Clock className="w-3 h-3" strokeWidth={1.5} />
-                  <span>{project.modified}</span>
-                </div>
-                <span className="text-xs text-primary font-medium flex items-center gap-0.5 opacity-0 group-hover:opacity-100 transition-opacity">
-                  Open <ArrowRight className="w-3 h-3" />
-                </span>
               </div>
             </div>
           ))}
